@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="MengChat by Fahim">
+    <meta name="author" content="M. Fahim David Bachtiar">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <meta name="color-scheme" content="only light">
+    <title>MengChat by Fahim</title>
+    <script src="https://kit.fontawesome.com/ef3f895959.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <dialog>
+        <div class="login-page">
+            <div>
+                <label for="dialog-username">Username :</label>
+                <input type="text" placeholder="Masukkan Username..." id="dialog-username" name="dialog-username"
+                    maxlength="15">
+                <span id="dialog-username-span"></span>
+                <p id="warning">Harap masukkan username</p>
+                <div id="dialog-ok">ok</div>
+            </div>
+        </div>
+    </dialog>
+    <div class="paper">
+        <nav>
+            <div class="isi-nav">
+                <p>Sidenav</p>
+                <p>Coming Soon</p>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header>
+                <i class="fa-solid fa-bars"></i>
+                <h1>MengChat</h1>
+                <div class="search-box">
+                    <input type="search" id="carikan" name="carikan" placeholder="Mengcari......" required>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </header>
+            <div class="chat-container">
+                <div class="chat-list">
+                    <div class="entity-list" onclick="bukaGlobal()">
+                        <div class="entity-img" style="background-image: url('source/global-logo.png');">
+
+                        </div>
+                        <p class="entity-username" id="entity-username">Global Chat</p>
+                    </div>
+                    <div class="entity-list">
+                        <div class="entity-img">
+
+                        </div>
+                        <p class="entity-username coming-soon" id="entity-username">Friend Chat 1 (Coming Soon)</p>
+                    </div>
+                    <div class="entity-list">
+                        <div class="entity-img">
+
+                        </div>
+                        <p class="entity-username coming-soon" id="entity-username">Friend Chat 2 (Coming Soon)</p>
+                    </div>
+                    <div class="entity-list">
+                        <div class="entity-img">
+
+                        </div>
+                        <p class="entity-username coming-soon" id="entity-username">Friend Chat 3 (Coming Soon)</p>
+                    </div>
+                    <div class="entity-list">
+                        <div class="entity-img">
+
+                        </div>
+                        <p class="entity-username coming-soon" id="entity-username">Private Grub (Coming Soon)</p>
+                    </div>
+                    <div class="entity-list">
+                        <div class="entity-img">
+
+                        </div>
+                        <p class="entity-username coming-soon" id="entity-username">Public Grub (Coming Soon)</p>
+                    </div>
+                </div>
+                <div class="chat-bar">
+                    <div class="chat-bar-header">
+                        <i class="fa-solid fa-arrow-left" onclick="backToList()"></i>
+                        <div class="entity-img" style="background-image: url('source/global-logo.png');">
+
+                        </div>
+                        <p class=" entity-username" id="entity-username">Global Chat</p>
+                    </div>
+                    <div class="chat-bar-content">
+
+                    </div>
+                    <div class="chat-bar-input">
+                        <textarea name="input-send-msg" id="input-send-msg" rows="1"
+                            placeholder="Tulis Pesan......"></textarea>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- firebase source -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script/setup/firebase_config.js"></script>
+
+    <!-- script utama -->
+    <script src="script/main/menglogin.js"></script>
+    <script src="script/main/script.js"></script>
+</body>
+
+</html>
